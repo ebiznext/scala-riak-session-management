@@ -1,4 +1,4 @@
-This is your new Play 2.1 application
+How it works
 =====================================
 
-This file will be packaged with your application, when using `play dist`.
+This sample does implement the Cache Plugin, since the session is load when teh request first arrives and is saved right before teh request ends.
