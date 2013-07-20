@@ -4,7 +4,7 @@ scala-riak-session-management
 What is this ?
 --------------
 A simple library for server side session backed by riak and/or filesystem folder.
-A sample illustrating its use in [Play](http://www.playframework.com) application (not synched yet).
+A sample illustrating its use in a [Play](http://www.playframework.com) application.
 
 How it works ?
 ---------------
