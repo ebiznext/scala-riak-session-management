@@ -1,4 +1,4 @@
 How it works
 =====================================
 
-This sample does implement the Cache Plugin, since the session is only loaded when the request first arrives and  saved right before the request ends.
+This sample does not implement the Cache Plugin, since the session is only loaded when the request first arrives and  saved right before the request ends.
