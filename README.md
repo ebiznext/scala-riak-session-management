@@ -32,7 +32,7 @@ Get Attribute
 Is it extensible ?
 -------------------
 
-Adding a new formatting require to implement the trait `Converter[A]` and adding a different backend (SQL Based ...) require to implement the trait `Backend[A]'.
+Adding a new formatting require to implement the trait `Converter[A]` and adding a different backend (SQL Based ...) require to implement the trait `Backend[A]`.
 
 
 
