@@ -12,29 +12,33 @@ How it works ?
 Just create a Riak Json formatted session handler
 
 ```scala
-val sessionManager =  new RiakBackend("127.0.0.1", 8098, "SESSION", 20)  with JSONConverter[Session]
-                                                                            
+val sessionManager =  new RiakBackend("127.0.0.1", 8098, "SESSION", 20)     with JSONConverter[Session]
                                                                             with SessionHandler
 ```
 
 or create a File Binary formatted session handler
 ```scala
-val sessionManager = new FileBackend(Files.createTempDir(), "SESSION", 20) with BinaryConverter[Session] 
-                                                                            
-                                                                              with SessionHandler
+val sessionManager = new FileBackend(Files.createTempDir(), "SESSION", 20)  with BinaryConverter[Session] 
+                                                                            with SessionHandler
 ```
 
 Add a new session
 
-`val session = sessionManager.addNewSession`
+```scala
+val session = sessionManager.addNewSession
+```
 
 Set Attributes
 
-`session.put("key", "value")`
+```scala
+session.put("key", "value")
+```
 
 Get Attribute
 
-`val value : Any = session("key")`
+```scala
+val value : Any = session("key")
+```
 
 
 Is it extensible ?
