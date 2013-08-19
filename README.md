@@ -11,14 +11,18 @@ How it works ?
 
 Just create a Riak Json formatted session handler
 
-```val sessionManager =  new RiakBackend("127.0.0.1", 8098, "SESSION", 20)  with JSONConverter[Session]
+```scala
+val sessionManager =  new RiakBackend("127.0.0.1", 8098, "SESSION", 20)  with JSONConverter[Session]
                                                                             
-                                                                            with SessionHandler```
+                                                                            with SessionHandler
+```
 
 or create a File Binary formatted session handler
-```val sessionManager = new FileBackend(Files.createTempDir(), "SESSION", 20) with BinaryConverter[Session] 
+```scala
+val sessionManager = new FileBackend(Files.createTempDir(), "SESSION", 20) with BinaryConverter[Session] 
                                                                             
-                                                                              with SessionHandler```
+                                                                              with SessionHandler
+```
 
 Add a new session
 
